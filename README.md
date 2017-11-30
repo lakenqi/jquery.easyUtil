@@ -21,7 +21,7 @@
 						betweenStr1: '每个字符串的引用起始符号，选填', </br>
 						prefix: '前缀,选填',</br>
 						suffix: '后缀,选填', </br>
-						betweenStr2: '每个字符串的引用终止符号，如果与‘betweenStr1’相同可不填，选填', </br>	
+						betweenStr2: '每个字符串的引用终止符号，选填', </br>	
 					},</br>
 					startStr: '拼接结果值的起始符号，选填,当‘isArray’设为‘false’时生效', </br>
 					endStr: '拼接结果值的终止符号，选填 ,当‘isArray’设为‘false’时生效', </br>
