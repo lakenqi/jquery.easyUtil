@@ -5,7 +5,7 @@
  				var option = {</br>
 						msg : '请定义提示信息内容-参数‘msg’！',  //必填</br>
 						title : '提示信息',</br>
-						iconNum : 3, （1 成功,2 失败,3 问号,4 锁定）</br>
+						iconNum : 3, （1 成功,2 失败,3 问号,4 锁定,5 难过表情,6 高兴表情,7 感叹号,）</br>
 						btn1 : '确定', alert可修改此项 选填</br>
 						btn2 : '取消',</br>
 						fnSuccess : function (){},</br>
@@ -27,4 +27,16 @@
 					splitStr: '分隔符号，当‘isArray’设为‘false’时生效，选填，默认为‘,’', </br>
 				};</br> 
  * 5. $.changeUrlArg(url, arg, val)</br>
- * *
+ * 6. $.(selector).swicthBlockELm(options), needs animate.css, you can use “animate.css” or DIY animation css');</br>
+ 				var exemple = {</br>
+					switchElmNames: '[元素id或class,使用块级元素,数组类型, 样式为"#idName或.className"],必填',</br>
+					isEvent: '是否启用鼠标事件,默认为"true",选填',</br>
+					eventType: '鼠标事件类型,默认"click",选填',</br>
+					currentShowElm: '当前首先显示的元素序号,顺序以"switchElmNames"为主,从1开始,默认为1,即数组中第一个元素,选填',</br>
+					animationIn: '动画进入样式,可自定义,默认采用animate.css中的"animated flipInY",选填 ',</br>
+					animationOut: '动画退出样式,可自定义,默认采用animate.css中的"animated flipOutY",选填',</br>
+					callbackFn: '切换完成后的回调函数,function() {}, 选填',</br>
+					callbackFnElm : '仅在事件模式下生效,激活函数的元素,可根据"switchElmNames"中顺序定义,从1开始;默认为0,即每次事件发生都激活,选填' ,</br>
+				};</br>
+ * 
+ */
