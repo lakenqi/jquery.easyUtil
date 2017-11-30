@@ -10,6 +10,7 @@
 						btn2 : '取消',</br>
 						fnSuccess : function (){},</br>
 						fnCancle : function (){},</br>
+						isLog: '是否输出内部自带日志,默认为true',</br>
 				};</br>
  * 3. $(selector).color()/background()/border()</br>
  * 4. $.superConcat(option)</br>
@@ -25,6 +26,7 @@
 					startStr: '拼接结果值的起始符号，选填,当‘isArray’设为‘false’时生效', </br>
 					endStr: '拼接结果值的终止符号，选填 ,当‘isArray’设为‘false’时生效', </br>
 					splitStr: '分隔符号，当‘isArray’设为‘false’时生效，选填，默认为‘,’', </br>
+					isLog: '是否输出内部自带日志,默认为true',</br>
 				};</br> 
  * 5. $.changeUrlArg(url, arg, val)</br>
  * 6. $.(selector).swicthBlockELm(options), needs animate.css, you can use “animate.css” or DIY animation css');</br>
@@ -37,6 +39,7 @@
 					animationOut: '动画退出样式,可自定义,默认采用animate.css中的"animated flipOutY",选填',</br>
 					callbackFn: '切换完成后的回调函数,function() {}, 选填',</br>
 					callbackFnElm : '仅在事件模式下生效,激活函数的元素,可根据"switchElmNames"中顺序定义,从1开始;默认为0,即每次事件发生都激活,选填' ,</br>
+					isLog: '是否输出内部自带日志,默认为true',</br>
 				};</br>
  * 
  */
