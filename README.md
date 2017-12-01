@@ -35,8 +35,7 @@
 					isEvent: '是否启用鼠标事件,默认为"true",选填',</br>
 					eventType: '鼠标事件类型,默认"click",选填',</br>
 					currentShowElm: '当前首先显示的元素序号,顺序以"switchElmNames"为主,从1开始,默认为1,即数组中第一个元素,选填',</br>
-					animationIn: '动画进入样式,可自定义,默认采用animate.css中的"animated flipInY",选填 ',</br>
-					animationOut: '动画退出样式,可自定义,默认采用animate.css中的"animated flipOutY",选填',</br>
+					animation: '动画样式,采用animate.css中的动画,默认为"animated flipInY",如使用该css,类名输入要完整,即“animated xxx”,保证动画正确调用;该项也可自定义,如不需要动画，填入false即可，选填 ',</br>
 					callbackFn: '切换完成后的回调函数,function() {}, 选填',</br>
 					callbackFnElm : '仅在事件模式下生效,激活函数的元素,可根据"switchElmNames"中顺序定义,从1开始;默认为0,即每次事件发生都激活,选填' ,</br>
 					isLog: '是否输出内部自带日志,默认为true',</br>
