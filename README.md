@@ -29,7 +29,7 @@
 					isLog: '是否输出内部自带日志，默认为true'</br>
 				};</br> 
  * 5. $.changeUrlArg(url, arg, val)</br>
- * 6. $.(selector).swicthBlockELm(options), needs animate.css, you can use “animate.css” or DIY animation css');</br>
+ * 6. $.(selector).swicthBlockElm(options), needs animate.css, you can use “animate.css” or DIY animation css');</br>
  				var exemple = {</br>
 					switchElmNames: '[元素id或class，使用块级元素，数组类型，样式为"#idName或.className"]，必填',</br>
 					isEvent: '是否启用鼠标事件，默认为"true"，选填',</br>
@@ -40,5 +40,7 @@
 					callbackFnElm : '仅在事件模式下生效，激活函数的元素，可根据"switchElmNames"中顺序定义，从1开始；默认为0，即每次事件发生都激活，选填' ,</br>
 					isLog: '是否输出内部自带日志，默认为true',</br>
 				};</br>
+ * 7. $.getRootPath()</br>
+ * 8. $.getUrlParam()</br>
  * 
  */
