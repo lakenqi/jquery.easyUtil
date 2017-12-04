@@ -1,7 +1,7 @@
 # jquery.easyUtil</br>
  * Introduce</br>
  * 1. $.log(message.title)</br>
- * 2. $.superAlert/superConfirm(options)   need layer.js</br>
+ * 2. $.superAlert/superConfirm(options)   needs layer.js</br>
  				var option = {</br>
 						msg : “请定义提示信息内容-参数‘msg’！”，  //必填</br>
 						title : “提示信息”，</br>
