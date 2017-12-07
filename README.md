@@ -8,11 +8,14 @@
 						iconNum : 默认3, （1 成功，2 失败，3 问号，4 锁定，5 难过表情，6 高兴表情，7 感叹号）</br>
 						btn1 : '确定'， alert可修改此项 选填</br>
 						btn2 : '取消'，</br>
+						closeBtn : 1 ,</br> 关闭按钮的样式，参照layer的样式，默认为1
 						fnSuccess : function (){},</br>
 						fnCancle : function (){},</br>
 						isLog: “是否输出内部自带日志,默认为true”，</br>
 				};</br>
- * 3. $(selector).color()/background()/border()</br>
+ * 3. $(selector).color()/background()/border()/getClass()/changeClass(oldName,newName)</br>
+ 			一组整合Jquery的方法，可直接获得或修改颜色color(),background(),border();</br>
+ 			可直接获得元素的class名称：getClass(),可以完成元素class的转换changeClass(old,new);</br>
  * 4. $.superConcat(option)</br>
         var option = {					</br>
 					strData: ['需拼接字符串,为数组形式, 必填项目'], </br>
