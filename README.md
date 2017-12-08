@@ -11,7 +11,7 @@
 						closeBtn : 1 ,</br> 关闭按钮的样式，参照layer的样式，默认为1
 						fnSuccess : function (){},</br>
 						fnCancle : function (){},</br>
-						isLog: “是否输出内部自带日志,默认为true”，</br>
+						isLog: “是否输出内部自带日志,默认为false”，</br>
 				};</br>
  * 3. $(selector).color()/background()/border()/getClass()/changeClass(oldName,newName)</br>
  			一组整合Jquery的方法，可直接获得或修改颜色color(),background(),border();</br>
@@ -29,7 +29,7 @@
 					startStr: '拼接结果值的起始符号，选填,当‘isArray’设为‘false’时生效', </br>
 					endStr: '拼接结果值的终止符号，选填 ,当‘isArray’设为‘false’时生效', </br>
 					splitStr: '分隔符号，当‘isArray’设为‘false’时生效，选填，默认为‘,’', </br>
-					isLog: '是否输出内部自带日志，默认为true'</br>
+					isLog: '是否输出内部自带日志，默认为false'</br>
 				};</br> 
  * 5. $.changeUrlArg(url, arg, val)</br>
  * 6. $.(selector).swicthBlockElm(options), needs animate.css, you can use “animate.css” or DIY animation css');</br>
@@ -41,9 +41,15 @@
 					animation: '该项可自定义或引入任意动画css的类样式，默认采用animate.css中的动画"animated flipInY"；需注意为保证动画正确调用，要完整引用对应的类样式名称；如不需要动画，填入false即可，选填 ',</br>
 					callbackFn: '切换完成后的回调函数,function() {}, 选填',</br>
 					callbackFnElm : '仅在事件模式下生效，激活函数的元素，可根据"switchElmNames"中顺序定义，从1开始；默认为0，即每次事件发生都激活，选填' ,</br>
-					isLog: '是否输出内部自带日志，默认为true',</br>
+					isLog: '是否输出内部自带日志，默认为false',</br>
 				};</br>
  * 7. $.getRootPath()</br>
  * 8. $.getUrlParam()</br>
- * 
+ * 9. $(selector).windowHeight(options) 设置屏幕高度，参数可不写，如有特殊处理参考如下：</br>
+ 			var exemple = {</br>
+ 					specailElms : [],'数组形式，如果有需要特殊调整高度的元素，写入此参数，注意仅限于动态取屏幕高度的元素，否则会减小到0'</br>
+ 					changeNums : [],'数组形式，上述参数中需调整的高度，如果调整高度相同，写一个即可，否则需要与上述参数一一对应'</br>
+ 					isLog: false '是否输出内部日志，默认false'</br>
+ 			}</br>
+ *
  */
