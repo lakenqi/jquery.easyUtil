@@ -8,7 +8,7 @@
 						iconNum : 默认3, （1 成功，2 失败，3 问号，4 锁定，5 难过表情，6 高兴表情，7 感叹号）</br>
 						btn1 : '确定'， alert可修改此项 选填</br>
 						btn2 : '取消'，</br>
-						closeBtn : 1 ,</br> 关闭按钮的样式，参照layer的样式，默认为1
+						closeBtn : 1 ,关闭按钮的样式，参照layer的样式，默认为1</br> 
 						fnSuccess : function (){},</br>
 						fnCancle : function (){},</br>
 						isLog: “是否输出内部自带日志,默认为false”，</br>
