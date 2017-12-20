@@ -41,6 +41,7 @@
 					animation: '该项可自定义或引入任意动画css的类样式，默认采用animate.css中的动画"animated flipInY"；需注意为保证动画正确调用，要完整引用对应的类样式名称；如不需要动画，填入false即可，选填 ',</br>
 					callbackFn: '切换完成后的回调函数,function() {}, 选填',</br>
 					callbackFnElm : '仅在事件模式下生效，激活函数的元素，可根据"switchElmNames"中顺序定义，从1开始；默认为0，即每次事件发生都激活，选填' ,</br>
+					delayTime :'回调函数执行的时间,单位毫秒,默认为1000',</br>
 					isLog: '是否输出内部自带日志，默认为false',</br>
 				};</br>
  * 7. $.getRootPath()</br>
