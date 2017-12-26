@@ -72,5 +72,18 @@
 					},</br>
 					isLog: '是否输出内部自带日志,默认为false',</br>
 				};</br>
- * 
- */
+ * 11. $.optionCardSwitch(options) --设置选项卡切换div功能，可设置事件激活类型，设置动画，详见参数设置</br>
+			  var example = {</br>
+								triggerElm : '触发转换的元素.class或标签名,建议使用无序列表Ul li 必填',</br>
+								switchElm : '转换div的主容器.Class,#id,或标签,建议使用DIV,必填',</br>
+								switchInner : '被转换的div.class或标签，建议使用div，默认值为div,如与默认值一致，选填',</br>
+								selectedClass : '当前激活的选项卡样式类型，选填',</br>
+								eventType: 'click，触发切换的鼠标事件类型，默认click,不可使用伪类，选填',</br>
+								animation : '切换时的动画class类，默认无，选填',</br>
+								switchTime : '100,切换的速度，默认100毫秒，选填',</br>
+								hoverClass : '鼠标移动到选项卡的样式，选填',</br>
+								isLog : 'false,是否输内部日志，默认false',</br>
+							};</br>
+ 
+*  
+*/
