@@ -36,17 +36,17 @@
 					isLog: '是否输出内部自带日志，默认为false'</br>
 				};</br> 
  * 5. $.changeUrlArg(url, arg, val)</br>
- * 6. $.(selector).swicthBlockElm(options), needs animate.css, you can use “animate.css” or DIY animation css');</br>
+ * 6. $.(selector).swicthBlockElm(option,togather) --块级元素切换，第二参数设置是否同时转换，默认false,可加入动画，需要引入 animate.css, 也可以引入其他css动画样式，或者自定义css动画;</br>
  				var exemple = {</br>
-					switchElmNames: '[元素id或class，使用块级元素，数组类型，样式为"#idName或.className"]，必填',</br>
-					isEvent: '是否启用鼠标事件，默认为"true"，选填',</br>
-					eventType: '鼠标事件类型，默认"click"，选填',</br>
-					currentShowElm: '当前首先显示的元素序号，顺序以"switchElmNames"为主，从1开始，默认为1，即数组中第一个元素，选填',</br>
-					animation: '该项可自定义或引入任意动画css的类样式，默认采用animate.css中的动画"animated flipInY"；需注意为保证动画正确调用，要完整引用对应的类样式名称；如不需要动画，填入false即可，选填 ',</br>
+					switchElmNames: '[元素id或class,使用块级元素,数组类型, 样式为"#idName或.className"],必填',</br>
+					isEvent: '是否启用鼠标事件,默认为"false",第二参数为true时，无效',</br>
+					eventType: '鼠标事件类型,默认"click",选填，第二参数为true时，无效',</br>
+					currentShowElm: '当前首先显示的元素序号,顺序以"switchElmNames"为主,从1开始,默认为1,即数组中第一个元素,选填,第二参数为true时，无效',</br>
+					animation: '[],数组形式，如果动画相同，则写一个，否则需一一对应，动画样式,采用animate.css中的动画,默认为"animated flipInY",如使用该css,类名输入要完整,即“animated xxx”,保证动画正确调用;该项也可自定义,选填 ',</br>
 					callbackFn: '切换完成后的回调函数,function() {}, 选填',</br>
-					callbackFnElm : '仅在事件模式下生效，激活函数的元素，可根据"switchElmNames"中顺序定义，从1开始；默认为0，即每次事件发生都激活，选填' ,</br>
+					callbackFnElm : '仅在事件模式下生效,激活函数的元素,可根据"switchElmNames"中顺序定义,从1开始;默认为0,即每次事件发生都激活,选填,第二参数为true时，无效' ,</br>
 					delayTime :'回调函数执行的时间,单位毫秒,默认为1000',</br>
-					isLog: '是否输出内部自带日志，默认为false',</br>
+					isLog: '是否输出内部自带日志,默认为false',</br>
 				};</br>
  * 7. $.getRootPath()</br>
  * 8. $.getUrlParam()</br>
