@@ -1,4 +1,4 @@
-# jquery.easyUtil</br>
+# <h1>jquery.easyUtil</h1></br>
  * Introduce</br>
  * 为便于使用jquery.easyUtil插件现在分为完全版（位于easyUtil_core文件夹下的.all.js）和分项版（位于split文件夹下的各种名字版）</br>
  * 可根据需要引用不同的，其中完全版涵盖除drag方法外（另见split文件下）的其他所有方法，文件体积较大。而分项版体积小，但是需配合引用.core.js后缀的核心js(位于easyUtil_core文件夹下)使用。</br>
@@ -84,6 +84,16 @@
 								hoverClass : '鼠标移动到选项卡的样式，选填',</br>
 								isLog : 'false,是否输内部日志，默认false',</br>
 							};</br>
- 
+ * 12. $(selector).autoFoldMenu(options) -- 设置菜单自动折叠和显示功能</br>
+ 				var example = {</br>
+						showClass : '菜单显示时动作按钮的CSS类,选填',</br>
+						hiddenClass : '菜单隐藏时动作按钮的CSS类,选填',</br>
+						eventType : 'click,触发事件类型,默认click选填',</br>
+						eventElm : '触发动作的元素,#id,.class,标签,必填',</br>
+						menuElm : '做为菜单隐藏和显示的元素,#id,.class,标签,必填',</br>
+						parentElm : '菜单项的直接父级元素,#id,.class,标签,必填',</br>
+						speed : '600,折叠速度,毫秒,默认600选填',</br>
+						isLog :　'false,是否显示内部日志,默认false, 选填',</br>
+				};</br>
 *  
 */
