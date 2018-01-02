@@ -4,8 +4,8 @@
  * <h3>可根据需要引用不同的，其中完全版涵盖除drag方法外（另见split文件下）的其他所有方法，文件体积较大。而分项版体积小，但是需配合引用.core.js后缀的核心js(位于easyUtil_core文件夹下)使用。</h3>
  * <h3>方法如果没有独立的js，则均在后缀core.js核心js中</h3>
  * <h3>drag方法的参数，参见split文件夹下内容，其余所有方法使用参数及描述如下：</h3>
- * 1.<strong>$.log(message.title)</strong></br>
- * 2.<strong>$.superAlert/superConfirm(options)   needs layer.js</strong></br>
+ * <strong>1.$.log(message.title)</strong></br>
+ * <strong>2.$.superAlert/superConfirm(options)   needs layer.js</strong></br>
  				&emsp;<strong>var option</strong> = {</br>
 						&emsp;&emsp;&emsp;<strong>msg : </strong>“请定义提示信息内容-参数‘msg’！”，  //必填</br>
 						&emsp;&emsp;&emsp;<strong>title :</strong> “提示信息”，</br>
@@ -17,10 +17,10 @@
 						&emsp;&emsp;&emsp;<strong>fnCancle :</strong> function (){},</br>
 						&emsp;&emsp;&emsp;<strong>isLog: </strong>“是否输出内部自带日志,默认为false”，</br>
 				&emsp;};</br>
- * 3.<strong>$(selector).color()/background()/border()/getClass()/changeClass(oldName,newName)</strong></br>
+ * <strong>3.$(selector).color()/background()/border()/getClass()/changeClass(oldName,newName)</strong></br>
  			<strong>一组整合Jquery的方法，可直接获得或修改颜色color(),background(),border();</strong></br>
  			<strong>可直接获得元素的class名称：getClass(),可以完成元素class的转换changeClass(old,new);</strong></br>
- * 4.<strong>$.superConcat(option)</strong></br>
+ * <strong>4.$.superConcat(option)</strong></br>
         &emsp;<strong>var option</strong> = {					</br>
 					&emsp;&emsp;&emsp;<strong>strData:</strong> ['需拼接字符串,为数组形式, 必填项目'], </br>
 					&emsp;&emsp;&emsp;<strong>isArray:</strong> '默认为‘true’，设置为‘false’可得到字符串类型拼接结果', </br>
@@ -35,8 +35,8 @@
 					&emsp;&emsp;&emsp;<strong>splitStr:</strong> '分隔符号，当‘isArray’设为‘false’时生效，选填，默认为‘,’', </br>
 					&emsp;&emsp;&emsp;<strong>isLog:</strong> '是否输出内部自带日志，默认为false'</br>
 				&emsp;};</br> 
- * 5.<strong> $.changeUrlArg(url, arg, val)</strong></br>
- * 6.<strong>$.(selector).swicthBlockElm(option,togather) --块级元素切换，第二参数设置是否同时转换，默认false,可加入动画，需要引入 animate.css, 也可以引入其他css动画样式，或者自定义css动画;</strong></br>
+ * <strong>5.$.changeUrlArg(url, arg, val)</strong></br>
+ * <strong>6.$.(selector).swicthBlockElm(option,togather) --块级元素切换，第二参数设置是否同时转换，默认false,可加入动画，需要引入 animate.css, 也可以引入其他css动画样式，或者自定义css动画;</strong></br>
  				&emsp;<strong>var exemple</strong> = {</br>
 					&emsp;&emsp;&emsp;<strong>switchElmNames:</strong> '[元素id或class,使用块级元素,数组类型, 样式为"#idName或.className"],必填',</br>
 					&emsp;&emsp;&emsp;<strong>isEvent:</strong> '是否启用鼠标事件,默认为"false",第二参数为true时，无效',</br>
@@ -48,15 +48,15 @@
 					&emsp;&emsp;&emsp;<strong>delayTime :</strong>'回调函数执行的时间,单位毫秒,默认为1000',</br>
 					&emsp;&emsp;&emsp;<strong>isLog: </strong>'是否输出内部自带日志,默认为false',</br>
 				&emsp;};</br>
- * 7.<strong> $.getRootPath()</strong></br>
- * 8.<strong> $.getUrlParam()</strong></br>
- * 9.<strong> $(selector).windowHeight(options) 设置屏幕高度，参数可不写，如有特殊处理参考如下：</strong></br>
+ * <strong>7.$.getRootPath()</strong></br>
+ * <strong>8.$.getUrlParam()</strong></br>
+ * <strong>9.$(selector).windowHeight(options) 设置屏幕高度，参数可不写，如有特殊处理参考如下：</strong></br>
  			&emsp;<strong>var exemple</strong> = {</br>
  					&emsp;&emsp;&emsp;<strong>specailElms :</strong> [],'选填，数组形式，如果有需要特殊调整高度的元素，写入此参数，注意仅限于动态取屏幕高度的元素，否则会减小到0'</br>
  					&emsp;&emsp;&emsp;<strong>changeNums :</strong> [],'选填，数组形式，上述参数中需调整的高度，如果调整高度相同，写一个即可，否则需要与上述参数一一对应'</br>
  					&emsp;&emsp;&emsp;<strong>isLog: </strong>false '是否输出内部日志，默认false'</br>
  			&emsp;}</br>
- * 10.<strong> $.superTimer(options) 统一设置js定时器管理，可自动激活和清除，也可通过事件驱动进行，详见参数设置'</strong></br>
+ * <strong>10.$.superTimer(options) 统一设置js定时器管理，可自动激活和清除，也可通过事件驱动进行，详见参数设置'</strong></br>
 			&emsp;<strong>var exemple</strong> = {</br>
 					&emsp;&emsp;&emsp;<strong>isInterval: </strong>'选填，是否循环定时，默认false',</br>
 					&emsp;&emsp;&emsp;<strong>times:</strong> '选填，[1000] 每个定时器的执行时间，单位毫秒，数组形式，默认一个时间：1000ms,如有多个触发时间，需要与定时器函数一一对应',</br>
@@ -72,7 +72,7 @@
 					&emsp;&emsp;&emsp;},</br>
 					&emsp;&emsp;&emsp;<strong>isLog:</strong> '是否输出内部自带日志,默认为false',</br>
 				&emsp;};</br>
- * 11.<strong> $.optionCardSwitch(options) --设置选项卡切换div功能，可设置事件激活类型，设置动画，详见参数设置</strong></br>
+ * <strong>11.$.optionCardSwitch(options) --设置选项卡切换div功能，可设置事件激活类型，设置动画，详见参数设置</strong></br>
 			 &emsp; <strong>var example</strong> = {</br>
 							&emsp;&emsp;&emsp;<strong>triggerElm :</strong> '触发转换的元素.class或标签名,建议使用无序列表Ul li 必填',</br>
 								&emsp;&emsp;&emsp;<strong>switchElm :</strong> '转换div的主容器.Class,#id,或标签,建议使用DIV,必填',</br>
@@ -84,7 +84,7 @@
 								&emsp;&emsp;&emsp;<strong>hoverClass :</strong> '鼠标移动到选项卡的样式，选填',</br>
 								&emsp;&emsp;&emsp;<strong>isLog :</strong> 'false,是否输内部日志，默认false',</br>
 							&emsp;};</br>
- * 12.<strong>$.autoFoldMenu(options) -- 设置菜单自动折叠和显示功能</strong></br>
+ * <strong>12.$.autoFoldMenu(options) -- 设置菜单自动折叠和显示功能</strong></br>
  				&emsp;<strong>var example</strong> = {</br>
  						&emsp;&emsp;&emsp;<strong>eventElm : </strong>'触发动作的元素,#id,.class,标签,必填',</br>
 						&emsp;&emsp;&emsp;<strong>menuElm :</strong> '做为菜单隐藏和显示的元素,#id,.class,标签,必填',</br>
