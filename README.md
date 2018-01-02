@@ -1,9 +1,9 @@
 # <h1>jquery.easyUtil</h1></br>
  * <h3>Introduce</h3></br>
- * <h3>为便于使用jquery.easyUtil插件现在分为完全版（位于easyUtil_core文件夹下的.all.js）和分项版（位于split文件夹下的各种名字版）</br>
- * 可根据需要引用不同的，其中完全版涵盖除drag方法外（另见split文件下）的其他所有方法，文件体积较大。而分项版体积小，但是需配合引用.core.js后缀的核心js(位于easyUtil_core文件夹下)使用。</br>
- * 方法如果没有独立的js，则均在后缀core.js核心js中</br>
- * drag方法的参数，参见split文件夹下内容，其余所有方法使用参数及描述如下：</h3></br>
+ * <h3>为便于使用jquery.easyUtil插件现在分为完全版（位于easyUtil_core文件夹下的.all.js）和分项版（位于split文件夹下的各种名字版）</h3></br>
+ * <h3>可根据需要引用不同的，其中完全版涵盖除drag方法外（另见split文件下）的其他所有方法，文件体积较大。而分项版体积小，但是需配合引用.core.js后缀的核心js(位于easyUtil_core文件夹下)使用。</h3></br>
+ * <h3>方法如果没有独立的js，则均在后缀core.js核心js中</h3></br>
+ * <h3>drag方法的参数，参见split文件夹下内容，其余所有方法使用参数及描述如下：</h3></br>
  * 1. $.log(message.title)</br>
  * 2. $.superAlert/superConfirm(options)   needs layer.js</br>
  				var option = {</br>
