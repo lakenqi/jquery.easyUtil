@@ -7,7 +7,7 @@
  * 1. <strong>$.log(message.title)</strong></br>
  * 2. <strong>$.superAlert/superConfirm(options)   needs layer.js</strong></br>
  				<strong>var option</strong> = {</br>
-						<strong>msg : </strong>“请定义提示信息内容-参数‘msg’！”，  //必填</br>
+						&emsp;<strong>msg : </strong>“请定义提示信息内容-参数‘msg’！”，  //必填</br>
 						<strong>title :</strong> “提示信息”，</br>
 						<strong>iconNum :</strong> 默认3, （1 成功，2 失败，3 问号，4 锁定，5 难过表情，6 高兴表情，7 感叹号）</br>
 						<strong>btn1 : </strong>'确定'， alert可修改此项 选填</br>
