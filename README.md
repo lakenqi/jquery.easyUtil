@@ -88,7 +88,7 @@
  				&emsp;<strong>var example</strong> = {</br>
  						&emsp;&emsp;&emsp;<strong>eventElm : </strong>'触发动作的元素,#id,.class,标签,必填',</br>
 						&emsp;&emsp;&emsp;<strong>menuElm :</strong> '做为菜单隐藏和显示的元素,#id,.class,标签,必填',</br>
-						&emsp;&emsp;&emsp;strong>parentElm :</strong> '菜单项和触发元素的共同直接父级元素,#id,.class,标签,必填',</br>
+						&emsp;&emsp;&emsp;<strong>parentElm :</strong> '菜单项和触发元素的共同直接父级元素,#id,.class,标签,必填',</br>
 						&emsp;&emsp;&emsp;<strong>showClass : </strong>'菜单显示时动作按钮的CSS类,选填 如有则两项必填',</br>
 						&emsp;&emsp;&emsp;<strong>hiddenClass : </strong>'菜单隐藏时动作按钮的CSS类,选填 如有则两项必填',</br>
 						&emsp;&emsp;&emsp;<strong>eventType : </strong>'click,触发事件类型,默认click,选填',</br>
