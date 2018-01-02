@@ -85,16 +85,16 @@
 								&emsp;&emsp;&emsp;<strong>isLog :</strong> 'false,是否输内部日志，默认false',</br>
 							&emsp;};</br>
  * 12.<strong>$.autoFoldMenu(options) -- 设置菜单自动折叠和显示功能</strong></br>
- 				<strong>var example</strong> = {</br>
- 						&emsp;&emsp;<strong>eventElm : </strong>'触发动作的元素,#id,.class,标签,必填',</br>
-						&emsp;&emsp;<strong>menuElm :</strong> '做为菜单隐藏和显示的元素,#id,.class,标签,必填',</br>
-						&emsp;&emsp;strong>parentElm :</strong> '菜单项和触发元素的共同直接父级元素,#id,.class,标签,必填',</br>
-						&emsp;&emsp;<strong>showClass : </strong>'菜单显示时动作按钮的CSS类,选填 如有则两项必填',</br>
-						&emsp;&emsp;<strong>hiddenClass : </strong>'菜单隐藏时动作按钮的CSS类,选填 如有则两项必填',</br>
-						&emsp;&emsp;<strong>eventType : </strong>'click,触发事件类型,默认click,选填',</br>
-						&emsp;&emsp;<strong>speed : </strong>'600,折叠速度,毫秒,默认600,选填',</br>
-						&emsp;&emsp;<strong>isMouseout : </strong>'false,是否在鼠标离开时自动隐藏所有菜单,默认false, 选填',</br>
-						&emsp;&emsp;<strong>isLog :　</strong>'false,是否显示内部日志,默认false, 选填',</br>
+ 				&emsp;<strong>var example</strong> = {</br>
+ 						&emsp;&emsp;&emsp;<strong>eventElm : </strong>'触发动作的元素,#id,.class,标签,必填',</br>
+						&emsp;&emsp;&emsp;<strong>menuElm :</strong> '做为菜单隐藏和显示的元素,#id,.class,标签,必填',</br>
+						&emsp;&emsp;&emsp;strong>parentElm :</strong> '菜单项和触发元素的共同直接父级元素,#id,.class,标签,必填',</br>
+						&emsp;&emsp;&emsp;<strong>showClass : </strong>'菜单显示时动作按钮的CSS类,选填 如有则两项必填',</br>
+						&emsp;&emsp;&emsp;<strong>hiddenClass : </strong>'菜单隐藏时动作按钮的CSS类,选填 如有则两项必填',</br>
+						&emsp;&emsp;&emsp;<strong>eventType : </strong>'click,触发事件类型,默认click,选填',</br>
+						&emsp;&emsp;&emsp;<strong>speed : </strong>'600,折叠速度,毫秒,默认600,选填',</br>
+						&emsp;&emsp;&emsp;<strong>isMouseout : </strong>'false,是否在鼠标离开时自动隐藏所有菜单,默认false, 选填',</br>
+						&emsp;&emsp;&emsp;<strong>isLog :　</strong>'false,是否显示内部日志,默认false, 选填',</br>
 				&emsp;};</br>
 *  
 */
