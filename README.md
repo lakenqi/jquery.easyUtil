@@ -1,9 +1,10 @@
 # <h1>jquery.easyUtil</h1></br>
  * <h3>Introduce</h3>
+ * <h5>先来个题外话，core文件夹中的easyUtil.css是一组常用的css样式总结，内部有注释，引入后可直接控制常用样式，如去除浏览器默认外边距，去除a标签下划线及ul标签圆点，其他均为类样式，使用时直接引入名称即可。如有冲突，直接在其他css中覆盖即可</h5>
+ * <h3>以下正式介绍</h3>
  * <h3>为便于使用jquery.easyUtil插件现在分为完全版（位于easyUtil_core文件夹下的.all.js）和分项版（位于split文件夹下的各种名字版）</h3>
- * <h3>可根据需要引用不同的，其中完全版涵盖除drag方法外（另见split文件下）的其他所有方法，文件体积较大。而分项版体积小，但是需配合引用.core.js后缀的核心js(位于easyUtil_core文件夹下)使用。</h3>
+ * <h3>使用时，可根据需求引用不同的js，其中完全版涵盖除drag方法外（另见split文件下）的其他所有方法，文件体积较大。而分项版体积小，但是需配合引用.core.js后缀的核心js(位于easyUtil_core文件夹下)使用。</h3>
  * <h3>方法如果没有独立的js，则均在后缀core.js核心js中</h3>
- * <h3>其中的easyUtil.css是一组常用的css样式总结，内部有注释，引入后可直接控制常用样式，如去除浏览器默认外边距，去除a标签下划线及ul标签圆点，其他均为类样式，使用时直接引入名称即可。如有冲突，直接在其他css中覆盖即可</h3>
  * <h3>drag方法的参数，参见split文件夹下内容，其余所有方法使用参数及描述如下：</h3>
  * <strong>1.$.log(message.title)</strong></br>
  * <strong>2.$.superAlert/superConfirm(options)   needs layer.js</strong></br>
