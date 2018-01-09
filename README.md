@@ -99,12 +99,17 @@
 						&emsp;&emsp;&emsp;<strong>isLog :　</strong>'false,是否显示内部日志,默认false, 选填',</br>
 				&emsp;};</br>
 * <strong>13.$(selector).superTable(options) -- 克隆表格并赋值的功能，需保证克隆模板的td上有class,且与javaBean属性对应</strong></br>
+ 				&emsp;<strong>重要说明：由于基于class进行赋值，因此使用本方法，须确保克隆模版中的tr标签最内层标签（即直接填写text文本的标签）与javabean有对应名称的class</strong></br>
  				&emsp;<strong>var example</strong> = {</br>
  						&emsp;&emsp;&emsp;<strong>datas : </strong>'[] ajax或其他数据源传回的json数组，对象形式与javabean对应，必填',</br>
 						&emsp;&emsp;&emsp;<strong>cloneTrId :</strong> '克隆的表格tr模板id #id形式，必填',</br>
+						&emsp;&emsp;&emsp;<strong>cloneEvent :</strong> 'false,是否克隆当前模板绑定的事件，默认false',</br>
 						&emsp;&emsp;&emsp;<strong>hiddenClass :</strong> 'false，默认false，如果隐藏使用class实现，则需写入该class且该class只有隐藏功能 ，选填',</br>
-						&emsp;&emsp;&emsp;<strong>specailClass : </strong>'[数组形式，td标签内部是否有嵌套，将该td对应的class名称填入，只需填写名称即可，选填]',</br>
-						&emsp;&emsp;&emsp;<strong>specailTag : </strong>'[数组形式，td内部嵌套的标签，写到最内层，即直接填入text的标签，每一项如有多个标签用空格分开，选填]',</br>
+						&emsp;&emsp;&emsp;<strong>specailClass : </strong>'[是否有需要特殊处理的文本class名称，如有特殊处理的文本，则该项必填，否则以下特殊参数将无效，直接填入名称即可，选填，如果该项填入，则以下specail开头的参数必须与之顺序一一对应，],</br>
+						&emsp;&emsp;&emsp;<strong>isCss :</strong> 'true，特殊项是否进行css处理，默认为true',</br>
+						&emsp;&emsp;&emsp;<strong>specailText : </strong>'[{},{}]数组形式的json，对应特殊处理的文本，有书写要求，键值对的形式，每一组一个json,如[{‘0’：‘是’,‘1’：‘否’}],每组json必须与specailClass顺序一一对应',</br>
+						&emsp;&emsp;&emsp;<strong>specailCssText :</strong> '[isCss为false,该项无效，数组形式，特殊css的文本，需要与cssClass参数顺序一一对应]',</br>
+						&emsp;&emsp;&emsp;<strong>specailCssClass :</strong> '[isCss为false,该项无效，数组形式，特殊处理的css类名称，如变颜色，仅处理特殊文本的样式，如果isOnlyCss为false，则所有specail开头参数的顺序必须一一对应],</br>
 						&emsp;&emsp;&emsp;<strong>isLog :　</strong>'false,是否显示内部日志,默认false, 选填',</br>
 				&emsp;};</br>  
 
