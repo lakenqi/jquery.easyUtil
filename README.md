@@ -5,6 +5,7 @@
  * <h3>为便于使用jquery.easyUtil插件现在分为完全版（位于easyUtil_core文件夹下的.all.js）和分项版（位于split文件夹下的各种名字版）</h3>
  * <h3>使用时，可根据需求引用不同的js，其中完全版涵盖除drag方法外（另见split文件下）的其他所有方法，文件体积较大。而分项版体积小，但是需配合引用.core.js后缀的核心js(位于easyUtil_core文件夹下)使用。</h3>
  * <h3>方法如果没有独立的js，则均在后缀core.js核心js中</h3>
+ * <h3>在引入all后缀的完全版js，输入$.easyUtil()，可在浏览器控制台看到所包含的所有方法简介</h3>
  * <h3>drag方法的参数，参见split文件夹下内容，其余所有方法使用参数及描述如下：</h3>
  * <strong>1.$.log(message，title)</strong>带日期和格式化的控制台日志， 第一参数为日志内容，第二参数为日志标题为选填项（默认输出“log日志”）</br>
  * <strong>2.$.superAlert/superConfirm(options)   needs layer.js</strong></br>
