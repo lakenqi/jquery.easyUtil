@@ -70,7 +70,7 @@
 					&emsp;&emsp;&emsp;<strong>isClear: </strong>'选填，是否清除定时器，默认false',</br>
 					&emsp;&emsp;&emsp;<strong>clear:</strong> {</br>
 					&emsp;&emsp;&emsp;&emsp;	&emsp;<strong>cELms: </strong>'选填，[]，清除定时器子项，事件触发元素，数组，该项如不填，默认采用定时清除，</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;如有多个，则要求同上',</br>
-						&emsp;&emsp;&emsp;&emsp;&emsp;<strong>cEventType: </strong>"选填，['click']，清除定时器事件驱动类型，数组，默认click,建议使用一个事件，</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;如有多个事件，则必须要与触发元素，定时器函数一一对应（顺序，个数必须完全一致），如cELms一项未填，此项无效"</br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;<strong>cEventType: </strong>"选填，['click']，清除定时器事件驱动类型，数组，默认click,建议使用一个事件，</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;如有多个事件，则必须要与触发元素，定时器函数一一对应（顺序，个数必须完全一致），</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;如cELms一项未填，此项无效"</br>
 						&emsp;&emsp;&emsp;&emsp;&emsp;<strong>cTimes: </strong>'选填，[1000]，清除定时器的时间，如设置了事件触发元素，则此项无效，默认1000ms,</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;如有多个时间，要求同上',</br>
 					&emsp;&emsp;&emsp;},</br>
 					&emsp;&emsp;&emsp;<strong>isLog:</strong> '是否输出内部自带日志,默认为false',</br>
@@ -106,7 +106,7 @@
 						&emsp;&emsp;&emsp;<strong>cloneTrId :</strong> '克隆的表格tr模板id #id形式，必填',</br>
 						&emsp;&emsp;&emsp;<strong>cloneEvent :</strong> 'false,是否克隆当前模板绑定的事件，默认false',</br>
 						&emsp;&emsp;&emsp;<strong>hiddenClass :</strong> 'false，默认false，如果隐藏使用class实现，则需写入该class且该class只有隐藏功能 ，选填',</br>
-						&emsp;&emsp;&emsp;<strong>specailClass : </strong>'[数组形式，是否有需要特殊处理的文本class名称，如有特殊处理的文本，</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;则该项必填，否则以下特殊参数将无效，直接填入名称即可，选填，如果该项填入，则以下specail开头的参数必须与之顺序一一对应，],</br>
+						&emsp;&emsp;&emsp;<strong>specailClass : </strong>'[数组形式，是否有需要特殊处理的文本class名称，如有特殊处理的文本，</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;则该项必填，否则以下特殊参数将无效，直接填入名称即可，选填，</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;如果该项填入，则以下specail开头的参数必须与之顺序一一对应，],</br>
 						&emsp;&emsp;&emsp;<strong>isCss :</strong> 'true，特殊项是否进行css处理，默认为true',</br>
 						&emsp;&emsp;&emsp;<strong>specailText : </strong>'[{},{}]数组形式的json，对应特殊处理的文本，有书写要求，键值对的形式，每一组一个json,</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;如[{‘0’：‘是’,‘1’：‘否’}],每组json必须与specailClass顺序一一对应',</br>
 						&emsp;&emsp;&emsp;<strong>specailCssText :</strong> '[isCss为false,该项无效，数组形式，特殊css的文本，需要与cssClass参数顺序一一对应]',</br>
