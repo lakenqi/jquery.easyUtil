@@ -98,7 +98,7 @@
 						&emsp;&emsp;&emsp;<strong>isMouseout : </strong>'false,是否在鼠标离开时自动隐藏所有菜单,默认false, 选填',</br>
 						&emsp;&emsp;&emsp;<strong>isLog :　</strong>'false,是否显示内部日志,默认false, 选填',</br>
 				&emsp;};</br>
-* <strong>13.$(selector).superTable(options) -- 克隆表格并赋值的功能，需保证克隆模板的td上有class,且与javaBean属性对应</strong></br>
+* <strong>13.$(selector).superTable(options) -- 克隆表格并赋值的功能，选择器为被赋值的table的id名称，需保证克隆模板的td上有class,且与javaBean属性对应</strong></br>
  				&emsp;<strong>重要说明：由于基于class进行赋值，因此使用本方法，须确保克隆模版中的tr标签最内层标签（即直接填写text文本的标签）与javabean有对应名称的class</strong></br>
  				&emsp;<strong>var example</strong> = {</br>
  						&emsp;&emsp;&emsp;<strong>datas : </strong>'[] ajax或其他数据源传回的json数组，对象形式与javabean对应，必填',</br>
