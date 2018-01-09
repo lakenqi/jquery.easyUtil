@@ -45,9 +45,9 @@
 					&emsp;&emsp;&emsp;<strong>isEvent:</strong> '是否启用鼠标事件,默认为"false",第二参数为true时，无效',</br>
 					&emsp;&emsp;&emsp;<strong>eventType: </strong>'鼠标事件类型,默认"click",选填，第二参数为true时，无效',</br>
 					&emsp;&emsp;&emsp;<strong>currentShowElm: </strong>'当前首先显示的元素序号,顺序以"switchElmNames"为主,从1开始,默认为1,即数组中第一个元素,</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;选填,第二参数为true时，无效',</br>
-					&emsp;&emsp;&emsp;<strong>animation:</strong> '[],数组形式，如果动画相同，则写一个，否则需一一对应，动画样式,采用animate.css中的动画,默认为"animated flipInY",如使用该css,类名输入要完整,即“animated xxx”,保证动画正确调用;该项也可自定义,选填 ',</br>
+					&emsp;&emsp;&emsp;<strong>animation:</strong> '[],数组形式，如果动画相同，则写一个，否则需一一对应，动画样式,采用animate.css中的动画,</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;默认为"animated flipInY",如使用该css,类名输入要完整,即“animated xxx”,</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;保证动画正确调用;该项也可自定义,选填 ',</br>
 					&emsp;&emsp;&emsp;<strong>callbackFn: </strong>'切换完成后的回调函数,function() {}, 选填',</br>
-					&emsp;&emsp;&emsp;<strong>callbackFnElm :</strong> '仅在事件模式下生效,激活函数的元素,可根据"switchElmNames"中顺序定义,从1开始;默认为0,即每次事件发生都激活,选填,第二参数为true时，无效' ,</br>
+					&emsp;&emsp;&emsp;<strong>callbackFnElm :</strong> '仅在事件模式下生效,激活函数的元素,可根据"switchElmNames"中顺序定义,从1开始;默认为0,</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;即每次事件发生都激活,选填,第二参数为true时，无效' ,</br>
 					&emsp;&emsp;&emsp;<strong>delayTime :</strong>'回调函数执行的时间,单位毫秒,默认为1000',</br>
 					&emsp;&emsp;&emsp;<strong>isLog: </strong>'是否输出内部自带日志,默认为false',</br>
 				&emsp;};</br>
@@ -55,23 +55,23 @@
  * <strong>8.$.getUrlParam()</strong></br>
  * <strong>9.$(selector).windowHeight(options) 设置屏幕高度，参数可不写，如有特殊处理参考如下：</strong></br>
  			&emsp;<strong>var exemple</strong> = {</br>
- 					&emsp;&emsp;&emsp;<strong>specailElms :</strong> [],'选填，数组形式，如果有需要特殊调整高度的元素，写入此参数，注意仅限于动态取屏幕高度的元素，否则会减小到0'</br>
- 					&emsp;&emsp;&emsp;<strong>changeNums :</strong> [],'选填，数组形式，上述参数中需调整的高度，如果调整高度相同，写一个即可，否则需要与上述参数一一对应'</br>
+ 					&emsp;&emsp;&emsp;<strong>specailElms :</strong> [],'选填，数组形式，如果有需要特殊调整高度的元素，写入此参数，注意仅限于</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;动态取屏幕高度的元素，否则会减小到0'</br>
+ 					&emsp;&emsp;&emsp;<strong>changeNums :</strong> [],'选填，数组形式，上述参数中需调整的高度，如果调整高度相同，写一个即可，</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;否则需要与上述参数一一对应'</br>
  					&emsp;&emsp;&emsp;<strong>isLog: </strong>false '是否输出内部日志，默认false'</br>
  			&emsp;}</br>
  * <strong>10.$.superTimer(options) 统一设置js定时器管理，可自动激活和清除，也可通过事件驱动进行，详见参数设置'</strong></br>
 			&emsp;<strong>var exemple</strong> = {</br>
 					&emsp;&emsp;&emsp;<strong>isInterval: </strong>'选填，是否循环定时，默认false',</br>
-					&emsp;&emsp;&emsp;<strong>times:</strong> '选填，[1000] 每个定时器的执行时间，单位毫秒，数组形式，默认一个时间：1000ms,如有多个触发时间，需要与定时器函数一一对应',</br>
-					&emsp;&emsp;&emsp;<strong>timerFns:</strong> '必填，[function() {}] 定时器执行函数内容，数组形式，将完整函数写入数组，每一个functiong(){}代表一个定时器，如有多个，则按先后顺序写入',</br>
+					&emsp;&emsp;&emsp;<strong>times:</strong> '选填，[1000] 每个定时器的执行时间，单位毫秒，数组形式，默认一个时间：1000ms,如有多个触发时间，</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;需要与定时器函数一一对应',</br>
+					&emsp;&emsp;&emsp;<strong>timerFns:</strong> '必填，[function() {}] 定时器执行函数内容，数组形式，将完整函数写入数组，每一个functiong(){}代表</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;一个定时器，如有多个，则按先后顺序写入',</br>
 					&emsp;&emsp;&emsp;<strong>isEvent:</strong> '选填，是否事件驱动定时器，默认false',</br>
-					&emsp;&emsp;&emsp;<strong>eventType:</strong> "选填，['click']，事件驱动类型，数组，默认click,建议使用一个事件，如有多个事件，则必须要与触发元素，定时器函数一一对应（顺序，个数必须完全一致）",</br>
-					&emsp;&emsp;&emsp;<strong>eventElms:</strong> '选填，[]，事件触发元素#xx或.xx,数组，如开启事件驱动，该项必填，要求与事件驱动类型一致，如有多个，需要一一对应',</br>
+					&emsp;&emsp;&emsp;<strong>eventType:</strong> "选填，['click']，事件驱动类型，数组，默认click,建议使用一个事件，如有多个事件，则必须要与</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;触发元素，定时器函数一一对应（顺序，个数必须完全一致）",</br>
+					&emsp;&emsp;&emsp;<strong>eventElms:</strong> '选填，[]，事件触发元素#xx或.xx,数组，如开启事件驱动，该项必填，要求与事件驱动类型一致，</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;如有多个，需要一一对应',</br>
 					&emsp;&emsp;&emsp;<strong>isClear: </strong>'选填，是否清除定时器，默认false',</br>
 					&emsp;&emsp;&emsp;<strong>clear:</strong> {</br>
-					&emsp;&emsp;&emsp;&emsp;	&emsp;<strong>cELms: </strong>'选填，[]，清除定时器子项，事件触发元素，数组，该项如不填，默认采用定时清除，如有多个，则要求同上',</br>
-						&emsp;&emsp;&emsp;&emsp;&emsp;<strong>cEventType: </strong>"选填，['click']，清除定时器事件驱动类型，数组，默认click,建议使用一个事件，如有多个事件，则必须要与触发元素，定时器函数一一对应（顺序，个数必须完全一致），如cELms一项未填，此项无效"</br>
-						&emsp;&emsp;&emsp;&emsp;&emsp;<strong>cTimes: </strong>'选填，[1000]，清除定时器的时间，如设置了事件触发元素，则此项无效，默认1000ms,如有多个时间，要求同上',</br>
+					&emsp;&emsp;&emsp;&emsp;	&emsp;<strong>cELms: </strong>'选填，[]，清除定时器子项，事件触发元素，数组，该项如不填，默认采用定时清除，</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;如有多个，则要求同上',</br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;<strong>cEventType: </strong>"选填，['click']，清除定时器事件驱动类型，数组，默认click,建议使用一个事件，</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;如有多个事件，则必须要与触发元素，定时器函数一一对应（顺序，个数必须完全一致），如cELms一项未填，此项无效"</br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;<strong>cTimes: </strong>'选填，[1000]，清除定时器的时间，如设置了事件触发元素，则此项无效，默认1000ms,</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;如有多个时间，要求同上',</br>
 					&emsp;&emsp;&emsp;},</br>
 					&emsp;&emsp;&emsp;<strong>isLog:</strong> '是否输出内部自带日志,默认为false',</br>
 				&emsp;};</br>
@@ -106,11 +106,11 @@
 						&emsp;&emsp;&emsp;<strong>cloneTrId :</strong> '克隆的表格tr模板id #id形式，必填',</br>
 						&emsp;&emsp;&emsp;<strong>cloneEvent :</strong> 'false,是否克隆当前模板绑定的事件，默认false',</br>
 						&emsp;&emsp;&emsp;<strong>hiddenClass :</strong> 'false，默认false，如果隐藏使用class实现，则需写入该class且该class只有隐藏功能 ，选填',</br>
-						&emsp;&emsp;&emsp;<strong>specailClass : </strong>'[是否有需要特殊处理的文本class名称，如有特殊处理的文本，则该项必填，否则以下特殊参数将无效，直接填入名称即可，选填，如果该项填入，则以下specail开头的参数必须与之顺序一一对应，],</br>
+						&emsp;&emsp;&emsp;<strong>specailClass : </strong>'[数组形式，是否有需要特殊处理的文本class名称，如有特殊处理的文本，</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;则该项必填，否则以下特殊参数将无效，直接填入名称即可，选填，如果该项填入，则以下specail开头的参数必须与之顺序一一对应，],</br>
 						&emsp;&emsp;&emsp;<strong>isCss :</strong> 'true，特殊项是否进行css处理，默认为true',</br>
-						&emsp;&emsp;&emsp;<strong>specailText : </strong>'[{},{}]数组形式的json，对应特殊处理的文本，有书写要求，键值对的形式，每一组一个json,如[{‘0’：‘是’,‘1’：‘否’}],每组json必须与specailClass顺序一一对应',</br>
+						&emsp;&emsp;&emsp;<strong>specailText : </strong>'[{},{}]数组形式的json，对应特殊处理的文本，有书写要求，键值对的形式，每一组一个json,</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;如[{‘0’：‘是’,‘1’：‘否’}],每组json必须与specailClass顺序一一对应',</br>
 						&emsp;&emsp;&emsp;<strong>specailCssText :</strong> '[isCss为false,该项无效，数组形式，特殊css的文本，需要与cssClass参数顺序一一对应]',</br>
-						&emsp;&emsp;&emsp;<strong>specailCssClass :</strong> '[isCss为false,该项无效，数组形式，特殊处理的css类名称，如变颜色，仅处理特殊文本的样式，如果isOnlyCss为false，则所有specail开头参数的顺序必须一一对应],</br>
+						&emsp;&emsp;&emsp;<strong>specailCssClass :</strong> '[isCss为false,该项无效，数组形式，特殊处理的css类名称，如变颜色，仅处理特殊</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;文本的样式，如果isOnlyCss为false，则所有specail开头参数的顺序必须一一对应],</br>
 						&emsp;&emsp;&emsp;<strong>isLog :　</strong>'false,是否显示内部日志,默认false, 选填',</br>
 				&emsp;};</br>  
 * <strong>14.$(selector).initSelected(option)---自定义下拉菜单初始化操作，当使用了自定义下拉框时，可使用该方法初始化。参数为clickFn:function(){},点击选中项后触发的方法;自定义下拉菜单可参考easyUtil.css和selected.html'<strong></br>
