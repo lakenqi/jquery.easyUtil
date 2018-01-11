@@ -55,7 +55,7 @@
  * <strong>8.$.getUrlParam()</strong></br>
  * <strong>9.$(selector).windowHeight(options) 设置屏幕高度，参数可不写，如有特殊处理参考如下：</strong></br>
  			&emsp;<strong>var exemple</strong> = {</br>
- 					&emsp;&emsp;&emsp;<strong>specailElms :</strong> [],'选填，数组形式，如果有需要特殊调整高度的元素，写入此参数，注意仅限于</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;动态取屏幕高度的元素，否则会减小到0'</br>
+ 					&emsp;&emsp;&emsp;<strong>specialElms :</strong> [],'选填，数组形式，如果有需要特殊调整高度的元素，写入此参数，注意仅限于</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;动态取屏幕高度的元素，否则会减小到0'</br>
  					&emsp;&emsp;&emsp;<strong>changeNums :</strong> [],'选填，数组形式，上述参数中需调整的高度，如果调整高度相同，写一个即可，</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;否则需要与上述参数一一对应'</br>
  					&emsp;&emsp;&emsp;<strong>isLog: </strong>false '是否输出内部日志，默认false'</br>
  			&emsp;}</br>
@@ -106,11 +106,12 @@
 						&emsp;&emsp;&emsp;<strong>cloneTrId :</strong> '克隆的表格tr模板id #id形式，必填',</br>
 						&emsp;&emsp;&emsp;<strong>cloneEvent :</strong> 'false,是否克隆当前模板绑定的事件，默认false',</br>
 						&emsp;&emsp;&emsp;<strong>hiddenClass :</strong> 'false，默认false，如果隐藏使用class实现，则需写入该class且该class只有隐藏功能 ，选填',</br>
-						&emsp;&emsp;&emsp;<strong>specailClass : </strong>'[数组形式，是否有需要特殊处理的文本class名称，如有特殊处理的文本，</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;则该项必填，否则以下特殊参数将无效，直接填入名称即可，选填，</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;如果该项填入，则以下specail开头的参数必须与之顺序一一对应，],</br>
+						&emsp;&emsp;&emsp;<strong>specialClass : </strong>'[数组形式，是否有需要特殊处理的文本class名称，如有特殊处理的文本，</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;则该项必填，否则以下特殊参数将无效，直接填入名称即可，选填，</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;如果该项填入，则以下special开头的参数必须与之顺序一一对应，],</br>
 						&emsp;&emsp;&emsp;<strong>isCss :</strong> 'true，特殊项是否进行css处理，默认为true',</br>
-						&emsp;&emsp;&emsp;<strong>specailText : </strong>'[{},{}]数组形式的json，对应特殊处理的文本，有书写要求，键值对的形式，每一组一个json,</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;如[{‘0’：‘是’,‘1’：‘否’}],每组json必须与specailClass顺序一一对应',</br>
-						&emsp;&emsp;&emsp;<strong>specailCssText :</strong> '[isCss为false,该项无效，数组形式，特殊css的文本，需要与cssClass参数顺序一一对应]',</br>
-						&emsp;&emsp;&emsp;<strong>specailCssClass :</strong> '[isCss为false,该项无效，数组形式，特殊处理的css类名称，如变颜色，仅处理特殊</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;文本的样式，如果isOnlyCss为false，则所有specail开头参数的顺序必须一一对应],</br>
+						&emsp;&emsp;&emsp;<strong>specialText : </strong>'[{},{}]数组形式的json，对应特殊处理的文本，有书写要求，键值对的形式，每一组一个json,</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;如[{‘0’：‘是’,‘1’：‘否’}],每组json必须与specialClass顺序一一对应',</br>
+						&emsp;&emsp;&emsp;<strong>specialCssText :</strong> '[isCss为false,该项无效，数组形式，特殊css的文本，需要与cssClass参数顺序一一对应]',</br>
+						&emsp;&emsp;&emsp;<strong>specialCssClass :</strong> '[isCss为false,该项无效，数组形式，特殊处理的css类名称，如变颜色，仅处理特殊</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;文本的样式，如果isOnlyCss为false，则所有special开头参数的顺序必须一一对应],</br>
+						&emsp;&emsp;&emsp;<strong>specialFn:</strong>'function($tableNode){return $tableNode},其他特殊处理的自定义函数,内容自定义,</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;只需注意要传入节点参数,返回节点参数(参数名自定义,也可使用默认名字)',</br>
 						&emsp;&emsp;&emsp;<strong>isLog :　</strong>'false,是否显示内部日志,默认false, 选填',</br>
 				&emsp;};</br>  
 * <strong>14.$(selector).initSelected(option)---自定义下拉菜单初始化操作，当使用了自定义下拉框时，可使用该方法初始化。参数为clickFn:function($elm){},点击选中项后触发的方法;自定义下拉菜单可参考easyUtil.css和selected.html'<strong></br>
