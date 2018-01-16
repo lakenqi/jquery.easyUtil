@@ -88,7 +88,7 @@
 								&emsp;&emsp;&emsp;<strong>hoverClass :</strong> '鼠标移动到选项卡的样式，选填',</br>
 								&emsp;&emsp;&emsp;<strong>isLog :</strong> 'false,是否输内部日志，默认false',</br>
 							&emsp;};</br>
- * <strong>12.$.autoFoldMenu(options) -- 设置菜单自动折叠和显示功能</strong></br>
+ * <strong>12.$.autoFoldMenu(options) -- 设置菜单自动折叠和显示功能，该方法会在menuELm内部自动生成class为makeCss的div层，可用于修改菜单样式</strong></br>
  				&emsp;<strong>var example</strong> = {</br>
  						&emsp;&emsp;&emsp;<strong>eventElm : </strong>'触发动作的元素,#id,.class,标签,必填',</br>
 						&emsp;&emsp;&emsp;<strong>menuElm :</strong> '做为菜单隐藏和显示的元素,#id,.class,标签,必填',</br>
