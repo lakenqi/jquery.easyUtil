@@ -117,6 +117,7 @@
 				&emsp;};</br>  
 * <strong>14.$(selector).initSelected(option)---自定义下拉菜单初始化操作，当使用了自定义下拉框时，可使用该方法初始化。参数为clickFn:function($elm){},点击选中项后触发的方法;自定义下拉菜单可参考easyUtil.css和selected.html'</strong></br>
 * <strong>15.$(selector).superScroll(options) -- 鼠标滚动异步加载数据的方法，需要配合jquery.mousewheel滚动事件插件使用，详见参数设置</strong></br>
+			&emsp;<strong>var example</strong> = {</br>
  						&emsp;&emsp;&emsp;<strong>type : </strong>'post, Ajax加载类型，默认post',</br>
 						&emsp;&emsp;&emsp;<strong>data :</strong> '传入参数，与Ajax使用方式相同',</br>
 						&emsp;&emsp;&emsp;<strong>url :</strong> '提交地址，只需写明相对路径，如类映射名/方法映射名',</br>
