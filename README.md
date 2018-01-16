@@ -1,5 +1,6 @@
 # <h1>jquery.easyUtil</h1></br>
  * <h3>Introduce</h3>
+ * <h3>部分插件方法结合了外部其他插件，首先感谢创造这些方法的大神们，所有用于支持的插件，收录于support文件夹下，如果这些支持插件的完整版，请去对应的官网下载</h3>
  * <h5>先来个题外话，core文件夹中的easyUtil.css是一组常用的css样式总结，内部有注释，引入后可直接控制常用样式，如去除浏览器默认外边距，去除a标签下划线及ul标签圆点，其他均为类样式，使用时直接引入名称即可。如有冲突，直接在其他css中覆盖即可</h5>
  * <h3>以下正式介绍</h3>
  * <h3>为便于使用jquery.easyUtil插件现在分为完全版（位于easyUtil_core文件夹下的.all.js）和分项版（位于split文件夹下的各种名字版）</h3>
@@ -115,5 +116,22 @@
 						&emsp;&emsp;&emsp;<strong>isLog :　</strong>'false,是否显示内部日志,默认false, 选填',</br>
 				&emsp;};</br>  
 * <strong>14.$(selector).initSelected(option)---自定义下拉菜单初始化操作，当使用了自定义下拉框时，可使用该方法初始化。参数为clickFn:function($elm){},点击选中项后触发的方法;自定义下拉菜单可参考easyUtil.css和selected.html'<strong></br>
+* <strong>15.$(selector).superScroll(options) -- 鼠标滚动异步加载数据的方法，需要配合jquery.mousewheel滚动事件插件使用，详见参数设置</strong></br>
+ 				&emsp;<strong>重要说明：由于基于class进行赋值，因此使用本方法，须确保克隆模版中的tr标签最内层标签（即直接填写text文本的标签）与javabean有对应名称的class</strong></br>
+ 				&emsp;<strong>var example</strong> = {</br>
+ 						&emsp;&emsp;&emsp;<strong>type : </strong>'post, Ajax加载类型，默认post',</br>
+						&emsp;&emsp;&emsp;<strong>data :</strong> '传入参数，与Ajax使用方式相同',</br>
+						&emsp;&emsp;&emsp;<strong>url :</strong> '提交地址，只需写明相对路径，如类映射名/方法映射名',</br>
+						&emsp;&emsp;&emsp;<strong>async :</strong> 'true，是否异步，与Ajax方式相同',</br>
+						&emsp;&emsp;&emsp;<strong>dataType : </strong>'jsonp，默认jsonp,与Ajax方式相同,</br>
+						&emsp;&emsp;&emsp;<strong>jsonp :</strong> 'jsonpCallback，jsonp回调名称，默认即可，不用修改此项，除非有自定义',</br>
+						&emsp;&emsp;&emsp;<strong>success : </strong>'function(data) {}，传输成功回调函数',</br>
+						&emsp;&emsp;&emsp;<strong>error :</strong> 'function(data) {alert(网络连接出错！);},传输失败函数',</br>
+						&emsp;&emsp;&emsp;<strong>loadingDivId :</strong> '负责显示加载动画的divID,选填',</br>
+						&emsp;&emsp;&emsp;<strong>rollNames:</strong>'["startNums", "perShow"]，滚动加载的自定义名称，按[起始，每次滚动显示]的书写顺序，</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;对应分页查询的起始条数名称和每页显示名称，默认名称如数组，需要保证与数据库所用名称相同',</br>
+						&emsp;&emsp;&emsp;<strong>perShowNum:</strong>'10，每次滚动显示条数，默认10条，',</br>
+						&emsp;&emsp;&emsp;<strong>isLog :　</strong>'false,是否显示内部日志,默认false, 选填',</br>
+				&emsp;};</br>  
+* 
 * 
 */
