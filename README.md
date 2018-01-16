@@ -115,7 +115,7 @@
 						&emsp;&emsp;&emsp;<strong>specialFn:</strong>'function($tableNode){return $tableNode},其他特殊处理的自定义函数,内容自定义,</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;只需注意要传入节点参数,返回节点参数(参数名自定义,也可使用默认名字)',</br>
 						&emsp;&emsp;&emsp;<strong>isLog :　</strong>'false,是否显示内部日志,默认false, 选填',</br>
 				&emsp;};</br>  
-* <strong>14.$(selector).initSelected(option)---自定义下拉菜单初始化操作，当使用了自定义下拉框时，可使用该方法初始化。参数为clickFn:function($elm){},点击选中项后触发的方法;自定义下拉菜单可参考easyUtil.css和selected.html'<strong></br>
+* <strong>14.$(selector).initSelected(option)---自定义下拉菜单初始化操作，当使用了自定义下拉框时，可使用该方法初始化。参数为clickFn:function($elm){},点击选中项后触发的方法;自定义下拉菜单可参考easyUtil.css和selected.html'</strong></br>
 * <strong>15.$(selector).superScroll(options) -- 鼠标滚动异步加载数据的方法，需要配合jquery.mousewheel滚动事件插件使用，详见参数设置</strong></br>
  						&emsp;&emsp;&emsp;<strong>type : </strong>'post, Ajax加载类型，默认post',</br>
 						&emsp;&emsp;&emsp;<strong>data :</strong> '传入参数，与Ajax使用方式相同',</br>
@@ -126,7 +126,7 @@
 						&emsp;&emsp;&emsp;<strong>success : </strong>'function(data) {}，传输成功回调函数',</br>
 						&emsp;&emsp;&emsp;<strong>error :</strong> 'function(data) {alert(网络连接出错！);},传输失败函数',</br>
 						&emsp;&emsp;&emsp;<strong>loadingDivId :</strong> '负责显示加载动画的divID,选填',</br>
-						&emsp;&emsp;&emsp;<strong>rollNames:</strong>'["startNums", "perShow"]，滚动加载的自定义名称，按[起始，每次滚动显示]的书写顺序，对应分页查询</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;的起始条数名称和每页显示名称，默认名称如数组，需要保证与数据库所用名称相同',</br>
+						&emsp;&emsp;&emsp;<strong>rollNames:</strong>'["startNums", "perShow"]，滚动加载的自定义名称，按[起始，每次滚动显示]的书写顺序，对应分页查询的起始条数名称和每页显示名称，默认名称如数组，需要保证与数据库所用名称相同',</br>
 						&emsp;&emsp;&emsp;<strong>perShowNum:</strong>'10，每次滚动显示条数，默认10条，',</br>
 						&emsp;&emsp;&emsp;<strong>isLog :　</strong>'false,是否显示内部日志,默认false, 选填',</br>
 				&emsp;};</br>  
