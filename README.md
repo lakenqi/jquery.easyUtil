@@ -116,7 +116,7 @@
 						&emsp;&emsp;&emsp;<strong>isLog :　</strong>'false,是否显示内部日志,默认false, 选填',</br>
 				&emsp;};</br>  
 * <strong>14.$(selector).initSelected(option)---自定义下拉菜单初始化操作，当使用了自定义下拉框时，可使用该方法初始化。参数为clickFn:function($elm){},点击选中项后触发的方法;自定义下拉菜单可参考easyUtil.css和selected.html'</strong></br>
-* <strong>15.$(selector).superScroll(options) -- 鼠标滚动异步加载数据的方法，需要配合jquery.mousewheel滚动事件插件使用，详见参数设置</strong></br>
+* <strong>15.$(selector).superScroll(options，test) -- 鼠标滚动异步加载数据的方法，需要配合jquery.mousewheel滚动事件插件使用,第二参数适用于jsonp,跨域请求,如果与服务器不在同一路径,则可通过下列test参数修改路径,详见参数设置</strong></br>
 			&emsp;<strong>var example</strong> = {</br>
  						&emsp;&emsp;&emsp;<strong>type : </strong>'post, Ajax加载类型，默认post',</br>
 						&emsp;&emsp;&emsp;<strong>data :</strong> '传入参数，与Ajax使用方式相同',</br>
@@ -131,6 +131,10 @@
 						&emsp;&emsp;&emsp;<strong>perShowNum:</strong>'10，每次滚动显示条数，默认10条，',</br>
 						&emsp;&emsp;&emsp;<strong>isLog :　</strong>'false,是否显示内部日志,默认false, 选填',</br>
 				&emsp;};</br>  
-* 
+				 &emsp;<strong>var test</strong> =  {</br>
+					&emsp;&emsp;&emsp;<strong>head:</strong> "localhost,ip地址,默认本机",</br>
+					&emsp;&emsp;&emsp;<strong>port:</strong> '8080,端口号,默认8080',</br>
+					&emsp;&emsp;&emsp;<strong>rootPath:</strong> '项目根路径,默认当前项目名称,书写时需要前面需要加"/"',</br>
+				&emsp;};</br>
 * 
 */
