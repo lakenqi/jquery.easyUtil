@@ -126,7 +126,7 @@
 						&emsp;&emsp;&emsp;<strong>success : </strong>'function(data) {}，传输成功回调函数',</br>
 						&emsp;&emsp;&emsp;<strong>error :</strong> 'function(data) {alert(网络连接出错！);},传输失败函数',</br>
 						&emsp;&emsp;&emsp;<strong>loadingDivId :</strong> '负责显示加载动画的divID,选填',</br>
-						&emsp;&emsp;&emsp;<strong>rollNames:</strong>'["startNums", "perShow"]，滚动加载的自定义名称，按[起始，每次滚动显示]的书写顺序，对应分页查询的起始条数名称和每页显示名称，默认名称如数组，需要保证与数据库所用名称相同',</br>
+						&emsp;&emsp;&emsp;<strong>rollNames:</strong>'["startNums", "perShow"]，滚动加载的自定义名称，按[起始，每次滚动显示]的书写顺序，对应</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;分页查询的起始条数名称和每页显示名称，默认名称如数组，需要保证与数据库所用名称相同',</br>
 						&emsp;&emsp;&emsp;<strong>perShowNum:</strong>'10，每次滚动显示条数，默认10条，',</br>
 						&emsp;&emsp;&emsp;<strong>isLog :　</strong>'false,是否显示内部日志,默认false, 选填',</br>
 				&emsp;};</br>  
