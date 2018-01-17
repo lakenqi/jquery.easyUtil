@@ -136,5 +136,5 @@
 					&emsp;&emsp;&emsp;<strong>port:</strong> '8080,端口号,默认8080',</br>
 					&emsp;&emsp;&emsp;<strong>rootPath:</strong> '项目根路径,默认当前项目名称,书写时需要前面需要加"/"',</br>
 				&emsp;};</br>
-* 
+* <strong>16.$.superAjax(options,test)----ajax跨域请求jsonp方式，option内容与ajax参数相同，url只需填写映射名称即可，如类“映射名/方法映射名”，第二参数test是开启自定义地址的测试模式，参数及默认值为{head:“localhost”,port:“8080”,rootPath:“”}，可自定义修改地址</strong></br>
 */
