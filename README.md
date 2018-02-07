@@ -137,6 +137,14 @@
 					&emsp;&emsp;&emsp;<strong>rootPath:</strong> '项目根路径,默认当前项目名称,书写时需要前面需要加"/"',</br>
 				&emsp;};</br>
 * <strong>16.$.superAjax(options,test)----ajax跨域请求jsonp方式，option内容与ajax参数相同，url只需填写映射名称即可，如类“映射名/方法映射名”，第二参数test是开启自定义地址的测试模式，参数及默认值为{head:“localhost”,port:“8080”,rootPath:“”}，可自定义修改地址</strong></br>
-* <strong>17.$.arrayUniqueMagic(array)----数组去重方法'</strong></br>
-
+* <strong>17.$.arrayUniqueMagic(array)----数组去重方法</strong></br>
+* <strong>18.$.upLoadMagic(options)----ajax上传文件，参数如下</strong></br>
+	&emsp;<strong>var example</strong> = {</br>
+ 						&emsp;&emsp;&emsp;<strong>paramsName : </strong>'[] 回传的参数名称，数组形式，必须与参数值一一对应，必填',</br>
+						&emsp;&emsp;&emsp;<strong>params :</strong> '[]，回传的参数值，数组形式，必须与参数名称一一对应，必填',</br>
+						&emsp;&emsp;&emsp;<strong>url :</strong> 'action地址，填入相对路径即可，如“/类映射名/方法映射名”，不用加aciton字样,必填</br>
+						&emsp;&emsp;&emsp;<strong>successFn :</strong> '上传成功回调函数，默认alert弹框提示，选填',</br>
+						&emsp;&emsp;&emsp;<strong>errorFn : </strong>'上传失败回调函数，默认alert弹框提示，选填,</br>
+						emsp;&emsp;&emsp;<strong>isLog : </strong>'false,是否显示内部日志,默认false, 选填',</br>
+				&emsp;};</br>  
 */
