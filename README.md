@@ -145,6 +145,6 @@
 						&emsp;&emsp;&emsp;<strong>url :</strong> 'action地址，填入相对路径即可，如“/类映射名/方法映射名”，不用加aciton字样,必填</br>
 						&emsp;&emsp;&emsp;<strong>successFn :</strong> '上传成功回调函数，默认alert弹框提示，选填',</br>
 						&emsp;&emsp;&emsp;<strong>errorFn : </strong>'上传失败回调函数，默认alert弹框提示，选填,</br>
-						emsp;&emsp;&emsp;<strong>isLog : </strong>'false,是否显示内部日志,默认false, 选填',</br>
+						&emsp;&emsp;&emsp;<strong>isLog : </strong>'false,是否显示内部日志,默认false, 选填',</br>
 				&emsp;};</br>  
 */
