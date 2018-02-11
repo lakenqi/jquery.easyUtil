@@ -146,5 +146,14 @@
 						&emsp;&emsp;&emsp;<strong>successFn :</strong> '上传成功回调函数，默认alert弹框提示，选填',</br>
 						&emsp;&emsp;&emsp;<strong>errorFn : </strong>'上传失败回调函数，默认alert弹框提示，选填,</br>
 						&emsp;&emsp;&emsp;<strong>isLog : </strong>'false,是否显示内部日志,默认false, 选填',</br>
-				&emsp;};</br>  
+				&emsp;};</br>
+* <strong>19.$(selector).verifyCodeMagic(options)----验证码方法，包括生成和验证，参数如下</strong></br>
+	&emsp;<strong>var example</strong> = {</br>
+ 						&emsp;&emsp;&emsp;<strong>imgId : </strong>'显示验证图片的标签ID，必填',</br>
+						&emsp;&emsp;&emsp;<strong>imgUrl :</strong> '调取图片的action，填入相对路径即可，如“/类映射名/方法映射名”，不用加aciton字样，必填',</br>
+						&emsp;&emsp;&emsp;<strong>changeId :</strong> 是否有点击换图的标签Id名称，有则填入，无则默认点击图片更换验证码，选填</br>
+						&emsp;&emsp;&emsp;<strong>checkEvent :</strong> 激活验证的事件类型，默认blur,选填,</br>
+						&emsp;&emsp;&emsp;<strong>checkFn : </strong>'自定义的验证函数，必填,</br>
+						&emsp;&emsp;&emsp;<strong>isLog : </strong>'false,是否显示内部日志,默认false, 选填',</br>
+				&emsp;};</br>   
 */
