@@ -156,4 +156,10 @@
 						&emsp;&emsp;&emsp;<strong>checkFn : </strong>'自定义的验证函数，必填,</br>
 						&emsp;&emsp;&emsp;<strong>isLog : </strong>'false,是否显示内部日志,默认false, 选填',</br>
 				&emsp;};</br>   
+* <strong>20.$.createEchartsMagic(options),$.resizeEchartsMagic()----echarts生成和自适应屏幕方法，参数如下</strong></br>
+	&emsp;<strong>var example</strong> = {</br>
+ 						&emsp;&emsp;&emsp;<strong>chartsDatas : </strong>'[]echats参数变量名称，不用加引号，与下一项一一对应，必填',</br>
+						&emsp;&emsp;&emsp;<strong>chartsDivId :</strong> '[]生成echats的divId名称字符串，与上一项一一对应，必填',</br>
+						&emsp;&emsp;&emsp;<strong>isLog : </strong>'false,是否显示内部日志,默认false, 选填',</br>
+				&emsp;};</br> 
 */
