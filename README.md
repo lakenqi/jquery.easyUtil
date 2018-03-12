@@ -115,7 +115,7 @@
 						&emsp;&emsp;&emsp;<strong>specialFn:</strong>'function($tableNode){return $tableNode},其他特殊处理的自定义函数,内容自定义,</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;只需注意要传入节点参数,返回节点参数(参数名自定义,也可使用默认名字)',</br>
 						&emsp;&emsp;&emsp;<strong>isLog :　</strong>'false,是否显示内部日志,默认false, 选填',</br>
 				&emsp;};</br>  
-* <strong>14.$(selector).initSelected(option)---自定义下拉菜单初始化操作，当使用了自定义下拉框时，可使用该方法初始化。参数为clickFn:function($elm){},点击选中项后触发的方法;自定义下拉菜单可参考easyUtil.css和selected.html'</strong></br>
+* <strong>14.$(selector).initSelected(option)---自定义下拉菜单初始化操作，当使用了自定义下拉框时，可使用该方法初始化。参数为clickFn:function($elm){},点击选中项后触发的方法;自定义下拉菜单可参考easyUtil.css和Vue.easyUtil.js组件生成器，需要bootstrap.js文件'</strong></br>
 * <strong>15.$(selector).superScroll(options，test) -- 鼠标滚动异步加载数据的方法，需要配合jquery.mousewheel滚动事件插件使用,第二参数适用于jsonp,跨域请求,如果与服务器不在同一路径,则可通过下列test参数修改路径,详见参数设置</strong></br>
 			&emsp;<strong>var example</strong> = {</br>
  						&emsp;&emsp;&emsp;<strong>type : </strong>'post, Ajax加载类型，默认post',</br>
