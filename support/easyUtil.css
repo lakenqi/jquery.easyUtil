@@ -1,5 +1,10 @@
-/* = CSS noraml by qy 2018.1.4 = */
-/* = remove defaultCSS = */
+/* ========== */
+/* = easyUtil Css by qy 2018.1.4 = */
+/* = unify and easy-using for css  = */
+/* = continue updating  = */
+/* = CopyRight by qy  = */
+/* ========== */
+/* ================ remove defaultCSS ======================== */
 *:focus {
     outline: none;
 }
@@ -7,19 +12,24 @@ a:hover,a:focus,a:active,a:visited,a:link{
     text-decoration: none;
 }
 
-/* ========== */
+/* ================================================================= */
 /* = base CSS = */
+html{
+	font-size: 1vw;
+}
 * {
     margin: 0px;
     padding: 0px;
     color: #FFFFFF;
-    font-size: 16px;
     font-family: "微软雅黑";
 }
 table thead, tbody tr {
     display:table;
     width:100%;
     table-layout:fixed;
+}
+img{
+	display: inline-block;
 }
 ul li{
     list-style: none; 
@@ -44,32 +54,59 @@ input[type=color]{
     background-color: rgba(255,255,255,0);
     float: right;
 }
+h3{
+	font-size: 1.09vw;
+	margin: 0.9em 0px 0.8em 2em
+}
+input,img,textarea{
+	box-sizing: border-box;
+}
 /*input range*/  
 input[type=range] {  
-  -webkit-appearance: none;/*娓呴櫎绯荤粺榛樿鏍峰紡*/  
+  -webkit-appearance: none;/
   width: 100%;  
-  background: -webkit-linear-gradient(#61bd12, #61bd12) no-repeat, #ddd;/*璁剧疆宸﹁竟棰滆壊涓�#61bd12锛屽彸杈归鑹蹭负#ddd*/  
-  background-size: 100% 100%;/*璁剧疆宸﹀彸瀹藉害姣斾緥*/  
-  height: 3px;/*妯潯鐨勯珮搴�*/  
+  background: -webkit-linear-gradient(#61bd12, #61bd12) no-repeat, #ddd;
+  background-size: 100% 100%;
+  height: 3px; 
 }  
 input[type=range]::-webkit-slider-thumb {  
-  -webkit-appearance: none;/*娓呴櫎绯荤粺榛樿鏍峰紡*/  
-  height: 26px;/*鎷栧姩鍧楅珮搴�*/  
-  width: 26px;/*鎷栧姩鍧楀搴�*/  
-  background: #05E4ED;/*鎷栧姩鍧楄儗鏅�*/  
-  border-radius: 50%; /*澶栬璁剧疆涓哄渾褰�*/  
-  border: solid 1px #05E4ED; /*璁剧疆杈规*/  
+  -webkit-appearance: none;  
+  height: 26px;
+  width: 26px; 
+  background: #05E4ED;
+  border-radius: 50%;  
+  border: solid 1px #05E4ED; 
 } 
 a{
     cursor: pointer !important;
     color:#ffffff !important;
 }
-h3{
-	margin: 5px 0px 10px 0px;
+/*for webkit Chrome scroll style*/
+::-webkit-scrollbar{
+	width: 5px;
+	height: 5px;
 }
-/* ========== */
-
-/* = flex Box = */
+::-webkit-scrollbar-thumb{
+	background-color: #016380;
+	border-radius: 5px;
+}
+::-webkit-scrollbar-track{
+	background-color: #003d67;
+	border-radius: 5px;
+}
+/* =================================================== */
+/* ======================= fixed body and perfect fits ====================== */
+.easyUtil-fixedBody{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	overflow: hidden;
+	margin: auto;
+}
+/* ====================================================== */
+/* ================= flex Box ======================== */
 .easyUtil-flexContainerRow{
 	display: -webkit-flex;
     display: flex;
@@ -82,7 +119,7 @@ h3{
     -webkit-flex-direction: column;
 }
 
-/* =========================================================== */
+/* ========================table serise=================================== */
 /* = table = */
 .easyUtil-table{
 	margin-bottom: 0px !important;
@@ -95,29 +132,57 @@ h3{
 }
 .easyUtil-table > thead > tr > th{
 	border-bottom: none !important;
-	text-align: center;
 	padding: 8px 0px !important;
-	font-size: 15px;
+	font-size: 1vw;
 }
 .easyUtil-table > tbody > tr > td{
  	border-top: none !important;
- 	text-align: center;
  	padding: 8px 0px !important;
- 	font-size: 13px;
- }
- /*colorsquare*/
-.easyUtil-diamond{
-	height: 20px;
-	width: 20px;
-	background-color: #003d67;
+ 	font-size: 0.9vw;
+}
+.easyUtil-table > tbody > tr > td *{
+ 	font-size: 0.9vw;
+}
+ 
+ /*counter*/
+.easyUtil-startCounter{
+	counter-reset: xuhao;
+}
+.easyUtil-counter{
+	vertical-align: baseline;
+	display: table;
+}
+.easyUtil-counter:before{
+	content: counter(xuhao);
+	counter-increment: xuhao;
+	background-color: rgb(0, 106, 155);
+	border-radius: 0.2vw;
 	display: inline-block;
-	border-radius: 5px;
-}.redDiamond{
-	background-color: #d6505f !important;
-}.orangeDiamond{
-	background-color: orange !important;
-}.greenDiamond{
-	background-color: #24FF00 !important;
+	margin: auto;
+	min-width: 1.5em;
+	min-height: 1.5em;
+    padding: 0 3px;
+	text-align: center;
+	font-size: 0.8vw;
+	box-sizing: border-box;
+}.counter1:before{
+	background-color: #d6505f;
+}.counter2:before{
+	background-color: orange;
+}.counter3:before{
+	background-color: #24FF00;
+}.circle:before{
+	border-radius: 50%;
+	width: 1.4em;
+	height: 1.4em;
+}
+.easyUtil-CounterHead:before{
+	content: "序号";
+	font-size: 1vw;
+	font-weight: bolder;
+/*	display: inline-block;
+	margin: 7%;*/
+	vertical-align: -0.45em;
 }
  
 /* = changeColor = */
@@ -133,7 +198,7 @@ h3{
 }
 /* ====================================================================== */
 
-/* = specail CSS = */
+/* ============================= specail CSS ============================= */
 .easyUtil-moreLightBox{
     box-shadow: 0px 0px 10px rgba(91,239,248,0.8);
 }
@@ -159,7 +224,8 @@ h3{
 	background-image: url(../img/Loading6-3.gif);
 	background-repeat: no-repeat;
 	background-position: center;
-	height: 80%;
+	height: 100%;
+	background-size: 2em;
 }
 /*fontCSS*/
 .easyUtil-fOrange{
@@ -190,13 +256,13 @@ h3{
     font-size: 12px !important;
 }
 .easyUtil-font13{
-    font-size: 13px !important;
+    font-size: 0.9vw !important;
 }
 .easyUtil-font14{
-    font-size: 2vh !important;
+    font-size: 0.9vw; !important;
 }
 .easyUtil-font15{
-    font-size: 15px !important;
+    font-size: 1vw !important;
 }
 .easyUtil-font16{
     font-size: 2.2vh !important;
@@ -217,13 +283,27 @@ h3{
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
+	z-index: 8999;
 }
 .easyUtil-fontOverFlow:hover{
 	overflow: visible;
+	color: #4dbeff !important;
 }
-/* ========== */
+.easyUtil-fontOverFlow *:hover{
+	overflow: visible;
+	color: #4dbeff !important;
+}
+.easyUtil-loading{
+	text-align: center;
+	margin: 5px auto;
+}
+.easyUtil-loading >img{
+	width: 25px;
+	height: 25px;
+}
+/* ============================================================================== */
 
-/* = animations = */
+/* ================================== animations ================================== */
 /*glitter*/
 .easyUtil-glittering {
  position: relative;
@@ -287,9 +367,9 @@ border-radius:100px;*/
 @-webkit-keyframes out{ 0%{ border-radius: 50%;} 100%{ border-radius: 10%;} } 
 @keyframes out{ 0%{ border-radius: 50%;} 100%{ border-radius: 10%;} }
 
-/* ========== */
+/* =============================================================================== */
 
-/* = layer = */
+/* ========================== layer=========================== */
 .layui-layer-setwin .layui-layer-close2 {
     position: absolute;
     right: -5px !important;
@@ -323,15 +403,15 @@ border-radius:100px;*/
     border-right:1px solid #2d7b80 !important; 
     border-bottom:1px solid #2d7b80 !important;
 }
-/* ========== */
+/* ======================================================================== */
 
-/* = popover Tips = */
+/* ====================== popover Tips =================================== */
 .popover{
   position: absolute;
   top: 2;
   left: 0;  
   display: block;  
-  max-width: 110px;
+  /*max-width: 110px;*/
   /*padding: 1px;*/
   /*font-size: 12px;*/
   font-style: normal;
@@ -363,7 +443,7 @@ border-radius:100px;*/
   text-indent:0px !important;
   /*  line-break: auto;*/
 }
-/*.popover.top {
+.popover.top {
   margin-top: -10px;
 }
 .popover.right {
@@ -374,7 +454,7 @@ border-radius:100px;*/
 }
 .popover.left {
   margin-left: -10px;
-}*/
+}
 .popover-title {
     text-align: -moz-left;
     padding: 4px 4px !important;
@@ -419,7 +499,7 @@ border-radius:100px;*/
   left: 50%;
   margin-left: -11px;
   /* border-top-color: #05E4ED; */
-  border-top-color: rgba(0, 0, 0, .25);
+  border-top-color: #55a4ba;
   border-bottom-width: 0;
 }
 .popover.top > .arrow:after {
@@ -433,8 +513,7 @@ border-radius:100px;*/
   top: 50%;
   left: -11px;
   margin-top: -11px;
-  border-right-color: #999;
-  border-right-color: rgba(0, 0, 0, .25);
+  border-right-color: #55a4ba;
   border-left-width: 0;
 }
 .popover.right > .arrow:after {
@@ -450,7 +529,7 @@ border-radius:100px;*/
   margin-left: -11px;
   border-top-width: 0;
   border-bottom-color: #999;
-  border-bottom-color: rgba(0, 0, 0, .25);
+  border-bottom-color: #55a4ba;
 }
 .popover.bottom > .arrow:after {
   top: 1px;
@@ -465,7 +544,7 @@ border-radius:100px;*/
   margin-top: -11px;
   border-right-width: 0;
   border-left-color: #999;
-  border-left-color: rgba(0, 0, 0, .25);
+  border-left-color: #55a4ba;
 }
 .popover.left > .arrow:after {
   right: 1px;
@@ -475,29 +554,61 @@ border-radius:100px;*/
   border-left-color: #333439;
 }
 
-/* ========== */
+/* ========================================================================= */
 
-
-/* = select Form = */
+/* ================================= select Form ================================ */
 .dropdown {
 z-index: 9999;
   position: relative;
 }
+.dropdown *{
+	font-size:0.9vw;;
+}
+.dropdown li{
+	display: block !important;
+}
 .dropdown-toggle:focus {
-  outline: 0;
+  	outline: 0;
 }
 .blueForm{
     border: 1px solid #2d6d92;
     font-size: 12px;
-    padding:0px 10px;
+    padding:0px 5px;
     top: 0px;;
     height: 29px;
     /*width: 120px;*/
-    line-height: 29px;
-    margin-left: 10px;
+   	min-width: 110px;
+    line-height: 4ex;
+    margin-left: 15px;
+    box-sizing: border-box;
 }
-.blueForm > button > span{
-	margin-right: 30px;
+.downarray{
+	border-left: 2px solid;
+	border-bottom: 2px solid;
+	transform: rotate(-45deg);
+	height: 9px;
+	width: 9px;
+	cursor: pointer;
+	margin-top: 0.25em;
+	box-sizing: content-box;
+	margin-right: 0.2em;
+}
+.downarray:before{
+	content: " ";
+	white-space: pre;
+	display: inline-block;
+	border-left: 2px solid;
+	border-bottom: 2px solid;
+	width: 9px;
+	height: 9px;
+	margin-left: 2px;
+	margin-top: -4px;
+	line-height: 2em;
+	vertical-align: 15px;  /*ie middle,other ok*/
+}
+.dropdown-toggle{
+	height: 100%;
+	width: 100%;
 }
 .dropdown-menu {
     position: absolute;
@@ -595,4 +706,4 @@ z-index: 9999;
   left: 0;
   z-index: 990;
 }
-/* ========== */
+/* =================================================================== */
